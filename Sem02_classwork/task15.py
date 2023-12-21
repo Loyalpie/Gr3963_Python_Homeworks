@@ -6,9 +6,9 @@ import random
 
 quantity_watermelon = int(input("Введите кол-во арбузов: "))
 
-watermelons = [0] * quantity_watermelon # массив арбузов)
+watermelons = [0] * quantity_watermelon # СПИСОК арбузов)
 
-# заполнение массива арбузов
+# заполнение СПИСКА арбузов
 for i in range(quantity_watermelon):
     watermelons[i] = random.randint(4, 7) + round(random.random(), 2)
 
