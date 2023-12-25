@@ -1,11 +1,11 @@
 # Дано натуральное число N и последовательность из N элементов. Требуется вывести эту последовательность в обратном порядке.
 
-def numbers(n):
-    while n >= 0:
-        print(f'{n}', end=" ")
-        return numbers(n-1)
-    return -1
+def numbers(n, s = ''):
+    if n > 0:
+        s += str(n) + ' '
+        return numbers(n-1, s)
+    return s
 
 number = int(input("Введите число: "))
 
-numbers(number)
+print(numbers(number))
