@@ -41,4 +41,4 @@ text = list(text.upper().split()) # переводим текст в списо�
 # создает кортеж состоящий из чисел (каждое число - количество гласных в каждой фразе)
 tuple_quantity_volwes_in_text = tuple(map(count_volwes, text))
 
-print(comparison_quantity_volwes(tuple_quantity_volwes_in_text))
+print("Парам пам-пам" if comparison_quantity_volwes(tuple_quantity_volwes_in_text) == True else "Пам парам")
